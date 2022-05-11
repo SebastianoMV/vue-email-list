@@ -19,7 +19,7 @@ const app = new Vue({
         
         });
       };
-      this.loading = false;
+      setTimeout(()=>{this.loading = false}, 1000);
       
     }
     
@@ -27,7 +27,7 @@ const app = new Vue({
 
 
   mounted() {
-    setTimeout(this.generaArrMail, 2000);
+    this.generaArrMail()
 
   
   },
